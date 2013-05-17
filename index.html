@@ -3,15 +3,45 @@
   <head>
     <title>i8yourtacks</title>
     <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
-    <link rel="stylesheet" href="todc-bootstrap.css">
     <link rel="stylesheet" href="style.css">
     <script type="text/javascript" src="lib/main.js"></script>
   </head>
   <body>
-    <h1>i8yourtracks</h1>
-    <h2>8-Tracks Mix Downloader</h2>
-    <div id="control"></div>
-    <div id="mixlist"></div>
 
-  </body>
+
+    <div class="navbar navbar-fixed-top">
+      <div class="navbar-inner">
+        <a class="brand">i8yourtracks</a>
+        <ul class="nav">
+          <li><a id="options">Options</a></li>
+          <li><a id="about">About</a></li>
+        </ul>
+        <p class="navbar-text pull-right login">Logged in as <a id="user"></a></p>
+      </div><!-- navinner -->
+    </div><!-- nav -->
+
+    <div class="container-fluid">
+      <div class="row-fluid row">
+        <div class="span3">
+          <div class="well sidebar-nav-fixed">
+            <div id="control"></div>
+          </div><!--/.well -->
+        </div><!--/span-->
+
+        <div class="span9 span-fixed-sidebar">
+          <div class="row-fluid">
+          <div id="mixcontainer"></div>
+          </div><!--/row-->
+        </div><!--/span-->
+      </div><!--/row-->
+
+      <hr>
+
+      <footer>
+        <p>&copy; Company 2012</p>
+      </footer>
+
+    </div><!--/.fluid-container-->
+
+</body>
 </html>
