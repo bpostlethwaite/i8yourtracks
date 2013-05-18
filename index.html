@@ -4,12 +4,15 @@
     <title>i8yourtacks</title>
     <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="table-fixed-header.css">
+    <script src="lib/jquery-2.0.0.min.js"></script>
+    <script src="lib/table-fixed-header.js"></script>
     <script type="text/javascript" src="lib/main.js"></script>
   </head>
   <body>
 
 
-    <div class="navbar navbar-fixed-top">
+    <div class="mainnav navbar navbar-fixed-top">
       <div class="navbar-inner">
         <a class="brand">i8yourtracks</a>
         <ul class="nav">
@@ -20,6 +23,27 @@
       </div><!-- navinner -->
     </div><!-- nav -->
 
+    <div class="subnav navbar navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="row-fluid">
+          <div class="span3"></div>
+          <div class="span6">
+            <div class="filterbar">
+              <input type="text" class="input-large filter-query">
+              <button type="button" class="filterMixes">Filter</button>
+            </div>
+          </div>
+          <div class="span3">
+            <div class="btn-group">
+              <button class="btn">Left</button>
+              <button class="btn">Middle</button>
+              <button class="btn">Right</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <div class="container-fluid">
       <div class="row-fluid row">
         <div class="span3">
@@ -29,19 +53,27 @@
         </div><!--/span-->
 
         <div class="span9 span-fixed-sidebar">
-          <div class="row-fluid">
-          <div id="mixcontainer"></div>
-          </div><!--/row-->
+          <table id="mixtable" class="table table-fixed-header">
+            <thead class="header">
+              <tr>
+                <th>
+                  <input type="checkbox" value="">
+                </th>
+                <th></th>
+                <th>Title</th>
+                <th>Description</th>
+                <th>Tags</th>
+                <th>Number of Tracks</th>
+                <th>Data</th>
+              </tr>
+            </thead>
+            <tbody id="mixbody"></tbody>
+          </table>
         </div><!--/span-->
       </div><!--/row-->
 
-      <hr>
-
-      <footer>
-        <p>&copy; Company 2012</p>
-      </footer>
 
     </div><!--/.fluid-container-->
 
-</body>
+  </body>
 </html>
