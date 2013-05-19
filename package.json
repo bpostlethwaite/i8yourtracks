@@ -1,4 +1,15 @@
 {
-  "name": "nw-demo",
-  "main": "index.html"
+  "name": "i8yourtracks",
+  "main": "index.html",
+  "description": "manage your favourite 8tracks mixes locally!",
+  "version": "0.1.0",
+  "keywords": [ "i8yourtracks", "node-webkit", "8tracks", "download" ],
+  "window": {
+    "toolbar": true,
+    "width": 1200,
+    "height": 800,
+    "position": "mouse",
+    "min_width": 400,
+    "min_height": 200
+  }
 }
