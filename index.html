@@ -3,35 +3,61 @@
   <head>
     <title>i8yourtacks</title>
     <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="style.css">
-    <script type="text/javascript" src="lib/main.js"></script>
   </head>
   <body>
+
+
 
     <div class="mainnav navbar navbar-fixed-top">
       <div class="navbar-inner">
         <a class="brand">i8yourtracks</a>
-        <ul class="nav">
-          <li><a id="options">Options</a></li>
-          <li><a id="about">About</a></li>
-        </ul>
+
+            <ul class="nav" role="navigation">
+
+              <li class="dropdown">
+                <a id="drop1" href="#" role="button" class="dropdown-toggle" data-toggle="dropdown">Options <b class="caret"></b></a>
+                <ul class="dropdown-menu" role="menu" aria-labelledby="drop1">
+                  <li role="presentation"><a role="menuitem" tabindex="-1" href="http://google.com">Action</a></li>
+                  <li role="presentation"><a role="menuitem" tabindex="-1" href="#anotherAction">Another action</a></li>
+                  <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Something else here</a></li>
+                  <li role="presentation" class="divider"></li>
+                  <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Separated link</a></li>
+                </ul>
+              </li>
+
+              <li><a id="about">About</a></li>
+            </ul>
+
         <p class="navbar-text pull-right login">Logged in as <a id="user"></a></p>
       </div><!-- navinner -->
     </div><!-- nav -->
 
+
+
+
     <div class="subnav navbar navbar-fixed-top">
       <div class="navbar-inner">
         <div class="row-fluid">
+
           <div class="span3">
-          <div class="subtitle">Mixes</div>
+            <div class="subtitle">8tracks Mix Manager</div>
           </div>
+
           <div class="span6">
             <div class="filter-bar">
               <input type="text" class="input-large filter-query">
               <button type="button" class="filterMixes">Filter</button>
             </div>
-            <button type="button" class="download-button hidden"><i class="icon-download-alt icon-white"></i></button>
+
+            <button type="button" class="download-button hidden"><i class="icon-cloud-download"></i></button>
+
+
+
           </div>
+
+
           <div class="span3">
             <div class="btn-group">
               <button class="btn">Left</button>
@@ -39,6 +65,7 @@
               <button class="btn">Right</button>
             </div>
           </div>
+
         </div>
       </div>
     </div>
@@ -61,6 +88,11 @@
 
 
     </div><!--/.fluid-container-->
+
+
+
+    <script type="text/javascript" src="lib/bootstrap-without-jquery.min.js"></script>
+    <script type="text/javascript" src="lib/main.js"></script>
 
   </body>
 </html>

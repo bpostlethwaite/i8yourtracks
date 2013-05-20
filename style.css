@@ -1,7 +1,4 @@
-/* #control { */
-/*     float: left; */
-/* } */
-
+/*********** GENERAL *******************/
 body {
     font-family: arial,sans-serif;
     font-size: 13px;
@@ -9,10 +6,14 @@ body {
     padding-top: 80px;
 }
 
+/************ MAIN NAV BAR *************/
+
 .brand {
     margin-left: 0 !important;
 }
 
+
+/************* SUBNAV ******************/
 .subnav {
     top: 40px;
     padding: 0 0 0 0;
@@ -25,15 +26,17 @@ body {
     box-shadow: 2px 0 0 0;
     background-color:#FFFFFF;
 }
+
+.subtitle {
+    font-size: 16px;
+    color: #d14836;
+    padding: 15px 10px 10px 10px;
+}
+
 .filter-bar {
     margin-top: 10px !important;
     margin-bottom: 10px !important;
     float: left;
-}
-
-.btn-group {
-    margin-top: 10px !important;
-    margin-bottom: 10px !important;
 }
 
 .filter-query {
@@ -49,16 +52,26 @@ body {
     background-color: #d14836;
 }
 
+.download-button:hover {
+    background-color: #C94230;
+}
+
 .download-button .hidden {
     display: hidden;
 }
 
-.subtitle {
-    /* font-family: arial,sans-serif; */
-    font-size: 16px;
-    color: #d14836;
-    padding: 15px 40px 10px 40px;
+.icon-cloud-download {
+    color: #fff;
+    font-size: 1.25em;
 }
+
+.btn-group {
+    margin-top: 10px !important;
+    margin-bottom: 10px !important;
+}
+
+
+/************* SIDE NAV ****************/
 
 .sidebar-nav-fixed {
     padding: 9px 0;
@@ -80,8 +93,18 @@ body {
     border:none;
     -webkit-border-radius:5px;
     background-color: #4d90fe;
-    /* background-color: #d14836; */
 }
+
+.search-user-button:hover {
+    background-color:#3F80E0
+}
+
+.icon-search {
+    color: #fff;
+    font-size: 1.25em;
+}
+
+/*********** Mix Table  ***************/
 
 .table-checkbox {
     width: 20px
@@ -101,4 +124,3 @@ body {
 .table-date {
     width: 50px;
 }
-
