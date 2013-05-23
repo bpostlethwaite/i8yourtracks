@@ -179,7 +179,7 @@ body {
     font-size: 0px;
 }
 
-#modal > #close-login:after {
+#modal > #close-login::after {
     content: 'X';
     display: block;
     /* position: absolute; */

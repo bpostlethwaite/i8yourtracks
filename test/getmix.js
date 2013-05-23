@@ -12,7 +12,7 @@ API.on('error', function (data) {
   console.log(data.errors)
 })
 
-API.getAllMixes('rustyspoons')
+API.getAllMixes('no0ne')
 
 
 function dateString (dateObj) {
