@@ -28,9 +28,21 @@
               </li>
 
               <li><a id="about">About</a></li>
+
             </ul>
 
-        <p class="navbar-text pull-right login">Logged in as <a id="user"></a></p>
+            <ul class="nav pull-right">
+              <li id="login" class="pull-right dropdown"><a>Sign in</a>
+	        <div id="modal-outer" class="hidden">
+		  <div id="modal">
+                    <span class="add-on">@</span>
+                    <input class="span2 login-input" id="prependedInput" type="text" placeholder="Username">
+		    <button type="button" id="modal-login">Login</button>
+                    <a id="close-login"></a>
+		  </div>
+	        </div>
+              </li>
+            </ul>
       </div><!-- navinner -->
     </div><!-- nav -->
 
@@ -79,9 +91,7 @@
         </div><!--/span-->
 
         <div class="span9">
-          <div class="span-fixed-sidebar">
-            <table id="mix-table" class="table table-hover">
-            </table>
+          <div id="main-window" class="span-fixed-sidebar">
           </div><!--/span-fixed-sidebar-->
         </div><!--/span-->
       </div><!--/row-->

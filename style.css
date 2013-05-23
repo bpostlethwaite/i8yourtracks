@@ -56,7 +56,7 @@ body {
     background-color: #C94230;
 }
 
-.download-button .hidden {
+.download-button.hidden {
     display: hidden;
 }
 
@@ -123,4 +123,102 @@ body {
 }
 .table-date {
     width: 50px;
+}
+
+
+/************* MODAL ******************/
+
+/* modal wrapper would like to gray out
+ * whole screen ...
+ */
+#modal-outer{
+    display: block;
+    position: absolute;
+    top: 0;
+    left:0;
+    hieght: 0%;
+    width: 0%;
+    z-index: 9999;
+    background: gray;
+    background: rgba(0, 0, 0, .5);
+}
+#modal-outer.hidden {
+    display: none;
+}
+
+/* modal inner */
+#modal{
+    width: auto;
+    height: auto;
+    visibility: visible;
+    display: block;
+    /**/
+    z-index: 6000;
+    padding: 20px;
+    position: fixed;
+    top: 20%;
+    left: 40%;
+    margin: 90px auto 40px;
+    overflow: visible;
+    background-color: white;
+    border: 1px solid #CCC	9;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    -webkit-border-radius: 6px;
+    border-radius: 6px;
+    -webkit-box-shadow: 0 4px 12px rgba(0, 0, 0, .4),inset 0 1px 0 rgba(255, 255, 255, .5);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, .4),inset 0 1px 0 rgba(255, 255, 255, .5);
+}
+
+/* modal close button */
+#modal > #close-login  {
+    position: absolute;
+    right: 0;
+    top: 0;
+    color: transparent;
+    font-size: 0px;
+}
+
+#modal > #close-login:after {
+    content: 'X';
+    display: block;
+    /* position: absolute; */
+    right: -16px;
+    top: -16px;
+    width: 10px;
+    height: 4px;
+    padding: 3px 7px 17px 7px;
+    text-decoration: none;
+    text-shadow: none;
+    text-align: center;
+    background: #d14836;
+    color: white;
+    border-radius: 40px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+#modal > #close-login:hover {
+    background-color: #C94230;
+}
+
+
+#modal > #modal-login {
+    width: 60px;
+    height: 28px;
+    border:none;
+    -webkit-border-radius:5px;
+    background-color: #4d90fe;
+    font-size: 12px;
+    font-weight: bold;
+    color: white;
+}
+
+#modal > #modal-login:hover {
+    background-color:#3F80E0
+}
+
+
+#modal > #prependedInput {
+    margin-bottom: 0px !important;
 }
