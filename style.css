@@ -6,6 +6,13 @@ body {
     padding-top: 40px;
 }
 
+.icon-music {
+    display: block;
+    font-size: 500px;
+    text-align: center;
+    color: #ddd;
+}
+
 /************* NAV BAR ****************/
 .navbar-inner {
     background-image: none;
@@ -27,11 +34,18 @@ body {
 }
 
 .options-button {
-    padding: 2px 2px !important;
+    float: left;
+    width: 60px;
+    height: 28px;
+    margin: 5px 10px;
+}
+
+.icon-cog {
+    font-size: 20px;
 }
 
 .download-button {
-    margin: 10px 10px 10px 20px;
+    margin: 5px 10px;
     width: 60px;
     height: 28px;
     border:none;
