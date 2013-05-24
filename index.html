@@ -8,97 +8,84 @@
   </head>
   <body>
 
-
-
-    <div class="mainnav navbar navbar-fixed-top">
-      <div class="navbar-inner">
-        <a class="brand">i8yourtracks</a>
-
-            <ul class="nav" role="navigation">
-
-              <li class="dropdown">
-                <a id="drop1" href="#" role="button" class="dropdown-toggle" data-toggle="dropdown">Options <b class="caret"></b></a>
-                <ul class="dropdown-menu" role="menu" aria-labelledby="drop1">
-                  <li role="presentation"><a role="menuitem" tabindex="-1" href="http://google.com">Action</a></li>
-                  <li role="presentation"><a role="menuitem" tabindex="-1" href="#anotherAction">Another action</a></li>
-                  <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Something else here</a></li>
-                  <li role="presentation" class="divider"></li>
-                  <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Separated link</a></li>
-                </ul>
-              </li>
-
-              <li><a id="about">About</a></li>
-
-            </ul>
-
-            <ul class="nav pull-right">
-              <li class="pull-right dropdown"><a id="login" >Sign in</a>
-	        <div id="modal-outer" class="hidden">
-		  <div id="modal">
-                    <span class="add-on">@</span>
-                    <input class="span2 login-input" id="prependedInput" type="text" placeholder="Username">
-		    <button type="button" id="modal-login">Login</button>
-                    <a id="close-login"></a>
-		  </div>
-	        </div>
-              </li>
-            </ul>
-      </div><!-- navbar-inner -->
-    </div><!-- nav -->
-
-
-
-
-    <div class="subnav navbar navbar-fixed-top">
+    <div class="navbar navbar-fixed-top">
       <div class="navbar-inner">
         <div class="row-fluid">
 
-          <div class="span3">
-            <div class="subtitle">8tracks Mix Manager</div>
-          </div>
-
           <div class="span6">
-            <div class="filter-bar">
-              <input type="text" class="input-large filter-query">
-              <button type="button" class="filterMixes">Filter</button>
-            </div>
-
+            <a class="brand">i8yourtracks</a>
+            <div class="subtitle">8tracks Mix Manager</div>
             <button type="button" class="download-button hidden"><i class="icon-cloud-download"></i></button>
+          </div> <!-- END SPAN4 -->
 
+          <div class="span2">
+            <ul class="nav" role="navigation">
+              <li class="dropdown">
+                <a class="btn dropdown-toggle options-button" data-toggle="dropdown" href="#">
+                  Options
+                  <span class="caret"></span>
+                </a>
+                <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu">
+                  <li><a tabindex="-1" href="#">Action</a></li>
+                  <li><a tabindex="-1" href="#">Another action</a></li>
+                  <li><a tabindex="-1" href="#">Something else here</a></li>
+                </ul>
 
-
+              <li><a id="about">About</a></li>
+            </ul>
           </div>
 
-
-          <div class="span3">
-            <div class="btn-group">
-              <button class="btn">Left</button>
-              <button class="btn">Middle</button>
-              <button class="btn">Right</button>
-            </div>
+          <div class="span4">
+            <ul class="nav pull-right">
+              <li class="pull-right dropdown">
+                <div id="user-login-container">
+                  <a class="login">Sign in</a>
+	          <div id="modal-outer" class="hidden">
+	            <div id="modal">
+                      <span class="add-on">@</span>
+                      <input class="span2 login-input" id="prependedInput" type="text" placeholder="Username">
+		      <button type="button" id="modal-login">Login</button>
+                      <a id="close-login"></a>
+	            </div>
+	          </div>
+                </div>
+              </li>
+            </ul>
           </div>
 
         </div>
       </div>
     </div>
 
+
     <div class="container-fluid">
       <div class="row-fluid">
+
         <div class="span3">
           <div class="sidebar-nav-fixed">
-            <div id="control"></div>
-            <div class="inputbutton">
-              <input type="text" placeholder="Search for a user" class="input-medium search-query">
+            <div>
+              <input type="text" placeholder="Search for a user" class="input-medium search-query search-input">
               <button type="button" class="search-user-button"><i class="icon-search"></i></button>
             </div>
-          </div><!--/.well -->
+
+            <div class="filter-bar">
+              <input type="text" class="input-large filter-input">
+              <button type="button" class="filter-mix-button">Filter</button>
+            </div>
+
+            <div id="liked-mixes" class="hidden">
+              <button type="button" class="btn liked-mixes-button">Liked Mixes</button>
+            </div>
+
+
+          </div><!--/.sidebar -->
         </div><!--/span-->
 
         <div class="span9">
-          <div id="main-window" class="span-fixed-sidebar">
-          </div><!--/span-fixed-sidebar-->
-        </div><!--/span-->
-      </div><!--/row-->
+          <div id="main-window" class="span-fixed-sidebar"></div>
+        </div>
+
+      </div>
 
 
     </div><!--/.fluid-container-->

@@ -3,44 +3,31 @@ body {
     font-family: arial,sans-serif;
     font-size: 13px;
     padding-bottom: 20px;
-    padding-top: 80px;
+    padding-top: 40px;
 }
 
-/************ MAIN NAV BAR *************/
+/************* NAV BAR ****************/
+.navbar-inner {
+    background-image: none;
+    border-width: 1px 0 1px 0;
+    border-color: #ddd;
+    box-shadow: 0 0 0 0 !important;
+    background-color:#FFFFFF;
+}
 
 .brand {
     margin-left: 0 !important;
 }
 
-
-/************* SUBNAV ******************/
-.subnav {
-    top: 40px;
-    padding: 0 0 0 0;
-    z-index: 1020;
-}
-.subnav > .navbar-inner {
-    background-image: none;
-    border-width: 1px 0 1px 0;
-    border-color: #ddd;
-    box-shadow: 2px 0 0 0;
-    background-color:#FFFFFF;
-}
-
 .subtitle {
+    float: left;
     font-size: 16px;
     color: #d14836;
-    padding: 15px 10px 10px 10px;
+    padding: 10px 10px 10px 10px;
 }
 
-.filter-bar {
-    margin-top: 10px !important;
-    margin-bottom: 10px !important;
-    float: left;
-}
-
-.filter-query {
-    margin-bottom: 0px !important;
+.options-button {
+    padding: 2px 2px !important;
 }
 
 .download-button {
@@ -65,9 +52,9 @@ body {
     font-size: 1.25em;
 }
 
-.btn-group {
-    margin-top: 10px !important;
-    margin-bottom: 10px !important;
+.logged-in > .avatar {
+    height: 38px;
+    padding: 2px 2px;
 }
 
 
@@ -102,6 +89,38 @@ body {
 .icon-search {
     color: #fff;
     font-size: 1.25em;
+}
+
+.filter-bar {
+    float: left;
+    margin-top: 10px !important;
+    margin-bottom: 10px !important;
+}
+
+.filter-input {
+    margin-bottom: 0px !important;
+    width: 165px;
+}
+
+.filter-mix-button {
+    width: 60px;
+    height: 28px;
+}
+
+.liked-mixes-button {
+    width: 160px;
+    height: 28px;
+    border:none;
+    -webkit-border-radius:5px;
+    background-color: #4d90fe;
+}
+
+.liked-mixes-button:hover {
+    background-color:#3F80E0
+}
+
+#liked-mixes.hidden {
+    display: none;
 }
 
 /*********** Mix Table  ***************/
@@ -221,4 +240,7 @@ body {
 
 #modal > #prependedInput {
     margin-bottom: 0px !important;
+}
+#modal > .login-input {
+    width: 156px !important;
 }
