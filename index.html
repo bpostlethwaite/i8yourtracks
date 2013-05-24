@@ -8,13 +8,20 @@
   </head>
   <body>
 
+    <div class="modal-dialog-bg hidden"></div>
+    <div id="modal" class="hidden">
+      <span class="add-on">@</span>
+      <input class="span2 login-input" id="prependedInput" type="text" placeholder="Username">
+      <button type="button" id="modal-login">Login</button>
+      <a id="close-login"></a>
+    </div>
+
     <div class="navbar navbar-fixed-top">
       <div class="navbar-inner">
         <div class="row-fluid">
 
           <div class="span6">
             <a class="brand">i8yourtracks</a>
-            <div class="subtitle">8tracks Mix Manager</div>
             <button class="download-button hidden"><i class="icon-cloud-download"></i></button>
           </div> <!-- END SPAN4 -->
 
@@ -30,14 +37,6 @@
               <li class="pull-right">
                 <div id="user-login-container">
                   <a class="login">Sign in</a>
-	          <div id="modal-outer" class="hidden">
-	            <div id="modal">
-                      <span class="add-on">@</span>
-                      <input class="span2 login-input" id="prependedInput" type="text" placeholder="Username">
-		      <button type="button" id="modal-login">Login</button>
-                      <a id="close-login"></a>
-	            </div>
-	          </div>
                 </div>
               </li>
             </ul>
@@ -53,6 +52,7 @@
 
         <div class="span3">
           <div class="sidebar-nav-fixed">
+            <div class="subtitle">8tracks Mix Manager</div>
             <div>
               <input type="text" placeholder="Search for a user" class="input-medium search-query search-input">
               <button type="button" class="search-user-button"><i class="icon-search"></i></button>

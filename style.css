@@ -26,13 +26,6 @@ body {
     margin-left: 0 !important;
 }
 
-.subtitle {
-    float: left;
-    font-size: 16px;
-    color: #d14836;
-    padding: 10px 10px 10px 10px;
-}
-
 .options-button {
     float: left;
     width: 60px;
@@ -75,7 +68,7 @@ body {
 /************* SIDE NAV ****************/
 
 .sidebar-nav-fixed {
-    padding: 9px 0;
+    padding: 0;
     margin-top: 10px;
     background-color:#FFFFFF;
     border: none;
@@ -86,6 +79,12 @@ body {
 
 .span-fixed-sidebar {
     margin-top: 10px;
+}
+
+.subtitle {
+    font-size: 16px;
+    color: #d14836;
+    padding: 10px 0px;
 }
 
 .search-user-button {
@@ -164,18 +163,18 @@ body {
 /* modal wrapper would like to gray out
  * whole screen ...
  */
-#modal-outer{
+.modal-dialog-bg{
     display: block;
     position: absolute;
     top: 0;
     left:0;
-    hieght: 0%;
-    width: 0%;
-    z-index: 9999;
-    background: gray;
-    background: rgba(0, 0, 0, .5);
+    height: 100%;
+    width: 100%;
+    z-index: 1256;
+    background: #fff;
+    opacity: 0.75;
 }
-#modal-outer.hidden {
+.modal-dialog-bg.hidden {
     display: none;
 }
 
@@ -186,7 +185,7 @@ body {
     visibility: visible;
     display: block;
     /**/
-    z-index: 6000;
+    z-index: 9999;
     padding: 20px;
     position: fixed;
     top: 20%;
@@ -194,7 +193,8 @@ body {
     margin: 90px auto 40px;
     overflow: visible;
     background-color: white;
-    border: 1px solid #CCC	9;
+    border-width: 1px;
+    border-color: #ccc;
     -webkit-background-clip: padding-box;
     background-clip: padding-box;
     -webkit-border-radius: 6px;
@@ -203,6 +203,9 @@ body {
     box-shadow: 0 4px 12px rgba(0, 0, 0, .4),inset 0 1px 0 rgba(255, 255, 255, .5);
 }
 
+#modal.hidden {
+    display: none;
+}
 /* modal close button */
 #modal > #close-login  {
     position: absolute;
