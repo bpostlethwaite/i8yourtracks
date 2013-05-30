@@ -14,7 +14,7 @@ API.on('mix', function (mix) {
   }
 })
 
-API.on('track', function (track, stream) {
+API.on('track', function (track) {
   var trackname = safename(track.trackName + "_" + track.artist + '.mp3')
   var trackpath = safename(track.mixName)
 
@@ -25,7 +25,7 @@ API.on('track', function (track, stream) {
       })
     } else {
       var fstream = fs.createWriteStream(path.join(trackpath, trackname))
-      stream.pipe(fstream)
+      track.stream.pipe(fstream)
     }
   })
 
@@ -43,7 +43,7 @@ API.on('error', function (data) {
   console.log(data.errors)
 })
 
-API.getAllMixes('rustyspoons')
+API.getMixes('rustyspoons')
 
 
 function dateString (dateObj) {
